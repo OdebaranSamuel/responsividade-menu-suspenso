@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color: rgb(76, 179, 144);
+    width: 100%;
+    height: 100px;
+}
+
+.cabechalho-suspenso {
+    position: relative;
+    display: inline-block;
+}
+
+.botao-suspenso {
+    background-color: rgb(146, 111, 179);
+    color: rgb(145, 184, 54);
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+}
+
+.itens-suspenso {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.itens-suspenso a {
+    color: rgb(14, 63, 128);
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    border: solid 1px black;
+    margin: 5px;
+}
+
+.itens-suspenso:hover {
+    background-color: rgb(152, 152, 201);
+}
+
+/* aqui eu mostro meu links suspensos ao definir o display como block */
+.cabechalho-suspenso:hover .itens-suspenso {
+    display: block;
+}
+.cabechalho-suspenso:hover .botao-suspenso {
+    background-color: rgb(13, 160, 111);
+}

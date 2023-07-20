@@ -3,51 +3,94 @@
     padding: 0px;
 }
 
+.pagina-inicial {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgb(139, 134, 134);
+    padding: 5px;
+    margin-left: 80px;
+}
+
 .cabecalho {
-    background-color: rgb(76, 179, 144);
+    background-color: #c5dff8;
     width: 100%;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.cabechalho-suspenso {
+.cabecalho-suspenso,
+.login-suspenso {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
-.botao-suspenso {
-    background-color: rgb(146, 111, 179);
-    color: rgb(145, 184, 54);
-    padding: 15px;
-    font-size: 20px;
-    border: none;
+.login-suspenso {
+    margin: 80px;
+    width: 150px;
+    text-align: center;
 }
 
-.itens-suspenso {
+.botao-suspenso,
+.login-texto {
+    background-color: #c5dff8;
+    color: rgb(139, 134, 134);
+    border: solid 2px #7895cb;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.4rem;
+}
+
+.login-texto {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    padding-right: 10px;
+    align-items: center;
+}
+
+.itens-suspenso,
+.registro-suspenso {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 115px;
+    min-width: 100%;
+    border-radius: 8px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.itens-suspenso a {
-    color: rgb(14, 63, 128);
+.itens {
+    color: rgb(139, 134, 134);
     padding: 15px 15px;
     text-decoration: none;
     display: block;
-    border: solid 1px black;
     margin: 5px;
+    border: solid 1px #7895cb;
+    border-radius: 8px;
 }
 
-.itens-suspenso:hover {
-    background-color: rgb(152, 152, 201);
-}
+/* .itens-suspenso:hover,
+.registro-suspenso:hover {
+    color: #4a55a2;
+} */
 
 /* aqui eu mostro meu links suspensos ao definir o display como block */
-.cabechalho-suspenso:hover .itens-suspenso {
+.cabecalho-suspenso:hover .itens-suspenso {
     display: block;
 }
-.cabechalho-suspenso:hover .botao-suspenso {
-    background-color: rgb(13, 160, 111);
+
+.login-suspenso:hover .registro-suspenso {
+    display: block;
+}
+
+.cabecalho-suspenso:hover .login-suspenso:hover {
+    border-color: white;
+}
+.itens:hover {
+    color: white;
+    background-color: #7895cb;
 }

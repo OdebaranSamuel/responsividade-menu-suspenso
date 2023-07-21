@@ -12,7 +12,6 @@
 }
 
 .cabecalho {
-    background-color: #c5dff8;
     width: 100%;
     height: 100px;
     display: flex;
@@ -35,9 +34,8 @@
 
 .botao-suspenso,
 .login-texto {
-    background-color: #c5dff8;
     color: rgb(139, 134, 134);
-    border: solid 2px #7895cb;
+    border: solid 2px rgb(139, 134, 134);
     border-radius: 8px;
     padding: 8px;
     font-size: 1.4rem;
@@ -93,4 +91,60 @@
 .itens:hover {
     color: white;
     background-color: #7895cb;
+}
+
+.titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.container-principal {
+    margin-top: 100px;
+    display: flex;
+    background-color: #c5dff8;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.textos {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    border: solid 2px black;
+    line-height: 1.4em;
+    font-size: 1.4em;
+    box-sizing: content-box;
+}
+
+.avaliacao {
+    width: 30%;
+    height: 100%;
+    border: solid 2px black;
+    margin: 0 100px;
+    border-radius: 8px;
+}
+
+.avaliacao-titulo {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.avaliacao-texto {
+    margin-bottom: 20px;
+    line-height: 1.4em;
+    font-size: 20px;
+}
+
+.lista-itens {
+    display: flex;
+}
+
+.avaliacao-itens {
+    margin-left: 20px;
+    position: absolute;
 }

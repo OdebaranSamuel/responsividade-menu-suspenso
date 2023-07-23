@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    background-color: #100f10;
+}
+
+.form {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.caixa-principal {
+    width: 30%;
+    height: 100%;
+    border: solid 2px #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #242424;
+    border-radius: 8px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #8739f9;
+}
+
+.texto {
+    margin: 20px 10px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #8739f9;
+}
+
+.container-icones {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    padding-left: 30px;
+    color: #8739f9;
+}
+
+.botao {
+    margin-bottom: 0px;
+    width: 200px;
+    margin-top: 50px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #8739f9;
+    background-color: #1b1b1b;
+}

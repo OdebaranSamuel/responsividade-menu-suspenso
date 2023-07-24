@@ -11,28 +11,20 @@
 </head>
 <body>
     <form class="form">
-        <section class="caixa-principal">
+        <div class="container-icones">
             <h1 class="titulo">Avalie o nosso serviço</h1>
             <p class="texto">Por favor, deixe-nos saber como fizemos com o seu pedido de suporte. todos os comentários são apreciados para nos ajudar a melhorar o nosso serviço</p>
-            <div class="container-icones">
-                <span class="material-symbols-outlined">
-                    star_rate
-                </span>
-                <span class="material-symbols-outlined">
-                    star_rate
-                </span>
-                <span class="material-symbols-outlined">
-                    star_rate
-                </span>
-                <span class="material-symbols-outlined">
-                    star_rate
-                </span>
-                <span class="material-symbols-outlined">
-                    star_rate
-                </span>
-            </div>
-            <button type="submit" class="botao">Enviar avaliação</button>
-        </section>
+                <ul class="lista-estrelas">
+                    <li class="estrela ativo" data-nota = "1"></li>
+                    <li class="estrela" data-nota = "2"></li>
+                    <li class="estrela" data-nota = "3"></li>
+                    <li class="estrela" data-nota = "4"></li>
+                    <li class="estrela" data-nota = "5"></li>
+                </ul>
+                <button type="submit" class="botao">Enviar avaliação</button>
+        </div>
     </form>
+
+    <script src="./js/avaliacao.js"></script>
 </body>
 </html>

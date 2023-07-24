@@ -7,14 +7,17 @@
 
 body {
     background-color: #355764;
+    width: 100%;
+    height: 100vh;
 }
 .pagina-inicial {
     text-decoration: none;
     font-size: 1.4rem;
     color: rgb(168, 162, 162);
     padding: 5px;
-    margin-left: 80px;
+    margin-left: 30px;
     font-family: "Abel", sans-serif;
+    display: inline-block;
 }
 
 .cabecalho {
@@ -23,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .cabecalho-suspenso,
@@ -46,6 +50,7 @@ body {
     padding: 8px;
     font-size: 1.4rem;
     font-family: "Abel", sans-serif;
+    display: inline-block;
 }
 
 .login-texto {
@@ -116,6 +121,7 @@ body {
     height: 300px;
     justify-content: center;
     box-sizing: border-box;
+    margin-right: 20px;
 }
 
 .textos {
@@ -124,14 +130,141 @@ body {
     text-align: left;
     display: inline-block;
     margin-left: 10px;
+    margin-right: 10px;
     border: solid 2px #7895cb;
     line-height: 1.4em;
     font-size: 1.4em;
     border-radius: 8px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    position: relative;
 }
 
 .textos p {
-    padding: 20px;
+    padding: 30px;
+    position: absolute;
+    height: 100%;
+}
+
+/* resposinvidade */
+
+@media (max-width: 1051px) {
+    .container-principal {
+        height: 50vh;
+    }
+
+    .textos {
+        width: 600px;
+    }
+}
+
+@media (max-width: 689px) {
+    .pagina-inicial,
+    .botao-suspenso,
+    .login-texto {
+        font-size: 1rem;
+    }
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+    .login-suspenso {
+        margin: 2px;
+        padding: 0;
+    }
+    .login-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 549px) {
+    .pagina-inicial,
+    .botao-suspenso,
+    .login-texto {
+        font-size: 1rem;
+    }
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+    .login-suspenso {
+        margin: 2px;
+        padding: 0;
+    }
+    .login-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-principal {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 345px) {
+    .pagina-inicial,
+    .botao-suspenso,
+    .login-texto {
+        font-size: 1rem;
+    }
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+    .login-suspenso {
+        margin: 2px;
+        padding: 0;
+    }
+    .login-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-principal {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .pagina-inicial,
+    .botao-suspenso,
+    .login-texto {
+        font-size: 1rem;
+    }
+    .container-principal {
+        height: 90vh;
+    }
+    .login-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho-suspenso {
+        position: relative;
+    }
+}
+
+@media (max-width: 300px) {
+    .pagina-inicial,
+    .botao-suspenso,
+    .login-texto {
+        font-size: 1rem;
+    }
+    .container-principal {
+        height: 100vh;
+    }
+    .login-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .textos {
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

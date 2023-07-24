@@ -13,14 +13,15 @@ body {
     box-sizing: border-box;
 }
 
-.caixa-principal {
+.container-icones {
     width: 30%;
     height: 100%;
     border: solid 2px #242424;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    justify-content: center;
+    position: relative;
     background-color: #242424;
     border-radius: 8px;
 }
@@ -34,32 +35,53 @@ body {
 }
 
 .texto {
+    text-align: center;
     margin: 20px 10px;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
     color: #8739f9;
 }
 
-.container-icones {
-    display: block;
-    position: relative;
-    margin-top: 50px;
+.lista-estrelas {
+    display: flex;
+    gap: 50px;
 }
 
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-    padding-left: 30px;
-    color: #8739f9;
+.estrela {
+    list-style-type: none;
+
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.estrela::before {
+    content: "\2605";
+}
+
+.estrela.ativo ~ .estrela::before {
+    content: "\2606";
+}
+
+.lista-estrelas:hover .estrela::before {
+    content: "\2605";
+}
+
+.estrela:hover ~ .estrela::before {
+    content: "\2606";
 }
 
 .botao {
-    margin-bottom: 0px;
-    width: 200px;
+    width: 100%;
     margin-top: 50px;
     border: none;
     font-size: 1.2rem;
     border-radius: 8px;
     cursor: pointer;
-    color: #8739f9;
+    color: #8a72ad;
     background-color: #1b1b1b;
+    padding: 10px;
+}
+
+.botao:hover {
+    color: #8739f9;
 }

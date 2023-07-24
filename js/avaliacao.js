@@ -17,5 +17,7 @@ document.addEventListener("click", function (evento) {
 
 botao.addEventListener("click", (evento) => {
     evento.preventDefault();
-    alert(`obrigado pela avaliação ${nome} ${sobreNome}`);
+    alert(
+        `Obrigado por nos avaliar ${nome} ${sobreNome}, sua avalliação foi enviada com sucesso!`
+    );
 });
